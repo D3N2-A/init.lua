@@ -1,5 +1,5 @@
-# Neovim Configuration Repository
-
+# My NVIM config 
+Supported Ver 0.9.x
 This is a repository containing my personal configuration for [Neovim](https://neovim.io/). It includes various plugins such as Telescope, Treesitter, LSP, and Packer.
 
 ## Requirements
