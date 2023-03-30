@@ -13,3 +13,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 --Cycling through tabs bufferline
 vim.keymap.set('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', {})
 vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', {})
+
+
+--Words falling animation
+vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
