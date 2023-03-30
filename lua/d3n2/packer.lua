@@ -1,24 +1,29 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
 
-  use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.1',
-	  -- or                            , branch = '0.1.x',
-	  requires = { {'nvim-lua/plenary.nvim'} }
-  } 
-  use({ 'rose-pine/neovim', as = 'rose-pine',config = function() vim.cmd('colorscheme rose-pine')
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.1',
+        -- or                            , branch = '0.1.x',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
+    use "olimorris/onedarkpro.nvim"
+    
+
+use {
+  'lewis6991/gitsigns.nvim',
+  config = function()
+    require('gitsigns').setup()
   end
-})
-
-
+}
 use( 'nvim-treesitter/nvim-treesitter',{run=':TSUpdate'})
 use( 'nvim-treesitter/playground')
 use( 'ThePrimeagen/harpoon')
 use('mbbill/undotree')
 use('tpope/vim-fugitive')
+use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 use {
 	'VonHeikemen/lsp-zero.nvim',
 	branch = 'v1.x',
