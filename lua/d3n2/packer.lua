@@ -9,14 +9,17 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    use "olimorris/onedarkpro.nvim"
-
-use {
+    use "olimorris/onedarkpro.nvim" 
+    use {
   'lewis6991/gitsigns.nvim',
   config = function()
     require('gitsigns').setup()
   end
 }
+
+--Commening plugins
+use ('numToStr/Comment.nvim') 
+use ( 'JoosepAlviste/nvim-ts-context-commentstring')
 use( 'nvim-treesitter/nvim-treesitter',{run=':TSUpdate'})
 use( 'nvim-treesitter/playground')
 use( 'ThePrimeagen/harpoon')
