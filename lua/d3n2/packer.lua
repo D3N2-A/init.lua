@@ -55,6 +55,9 @@ return require('packer').startup(function(use)
             { 'rafamadriz/friendly-snippets' }, -- Optional
         }
     }
+    -- Indenting and stuff
+    use "lukas-reineke/indent-blankline.nvim"
+    use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
     -- Takumi aka crazydog lua config stuff
     use 'windwp/nvim-autopairs'
     use 'windwp/nvim-ts-autotag'
