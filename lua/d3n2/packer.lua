@@ -55,6 +55,10 @@ return require('packer').startup(function(use)
             { 'rafamadriz/friendly-snippets' }, -- Optional
         }
     }
+    --nvim tree
+    use 'nvim-tree/nvim-tree.lua'
+    use 'nvim-tree/nvim-web-devicons'
+
     -- Indenting and stuff
     use "lukas-reineke/indent-blankline.nvim"
     use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
