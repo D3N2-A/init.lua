@@ -4,6 +4,8 @@ vim.o.foldlevelstart = 99
 vim.o.foldenable = true
 
 
+-- To create a fold at give location, use <leader>zc
+-- To close that use zm
 vim.keymap.set('n', 'zR', require('ufo').openAllFolds)
 vim.keymap.set('n', 'zM', require('ufo').closeAllFolds)
 
