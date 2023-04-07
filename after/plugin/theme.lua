@@ -40,7 +40,7 @@ require('rose-pine').setup({
     highlight_groups = {
         ColorColumn = { bg = 'rose' },
         -- Blend colours against the "base" background
-        CursorLine = { bg = 'foam', blend = 10 },
+        --[[ CursorLine = { bg = 'foam', blend = 10 }, ]]
         StatusLine = { fg = 'love', bg = 'love', blend = 10 },
     }
 })

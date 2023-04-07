@@ -20,10 +20,16 @@ vim.keymap.set('i', '<S-Enter>', '<Esc>o')
 --Words falling animation
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
+--[[ vim.opt.cursorline = true ]]
+--[[ vim.opt.winblend = 0 ]]
+--[[ vim.opt.wildoptions = 'pum' ]]
+--[[ vim.opt.pumblend = 5 ]]
+-- Enable cursorline and set its highlighting
 vim.opt.cursorline = true
-vim.opt.winblend = 0
-vim.opt.wildoptions = 'pum'
-vim.opt.pumblend = 5
+vim.cmd('highlight CursorLine guibg=none gui=underline')
+
+-- Automatically update the highlighting when the colorscheme changes
+vim.cmd([[autocmd ColorScheme * highlight CursorLine guibg=none gui=underline]])
 -- highlight yanked text for 200ms using the "Visual" highlight group
 vim.cmd [[
   augroup highlight_yank
