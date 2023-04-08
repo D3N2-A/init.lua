@@ -59,6 +59,10 @@ return require('packer').startup(function(use)
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-tree/nvim-web-devicons'
 
+    --Smooth scrolling
+    --[[ use 'karb94/neoscroll.nvim' ]]
+    --[[ require('neoscroll').setup() ]]
+    --[[]]
     -- Indenting and stuff
     use "lukas-reineke/indent-blankline.nvim"
     use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
