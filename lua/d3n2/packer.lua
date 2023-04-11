@@ -56,9 +56,8 @@ return require('packer').startup(function(use)
         }
     }
     --nvim tree
-    use 'nvim-tree/nvim-tree.lua'
-    use 'nvim-tree/nvim-web-devicons'
-
+    --[[ use 'nvim-tree/nvim-tree.lua' ]]
+    --[[ use 'nvim-tree/nvim-web-devicons' ]]
     --Smooth scrolling
     --[[ use 'karb94/neoscroll.nvim' ]]
     --[[ require('neoscroll').setup() ]]
