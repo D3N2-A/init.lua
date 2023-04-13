@@ -68,7 +68,11 @@ return require('packer').startup(function(use)
     -- Takumi aka crazydog lua config stuff
     use 'windwp/nvim-autopairs'
     use 'windwp/nvim-ts-autotag'
-    use 'akinsho/nvim-bufferline.lua'
+    --[[ use 'akinsho/nvim-bufferline.lua' ]]
+    --Barber
+    use { 'romgrk/barbar.nvim', requires = 'nvim-web-devicons' }
+
+
     use 'glepnir/lspsaga.nvim'
     use 'norcalli/nvim-colorizer.lua'
     use 'nvim-lualine/lualine.nvim'
