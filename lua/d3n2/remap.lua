@@ -11,13 +11,11 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
---Cycling through tabs bufferline
-vim.keymap.set('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', {})
-vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', {})
+--Cycling through tabs barbar tabs
+vim.keymap.set('n', '<Tab>', '<Cmd>BufferNext<CR>', {})
+vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferPrev<CR>', {})
 --Remaped shift eneter to start new line
 vim.keymap.set('i', '<S-Enter>', '<Esc>o')
-
-
 --Words falling animation
 vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 
