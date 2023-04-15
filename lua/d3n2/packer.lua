@@ -70,6 +70,7 @@ return require('packer').startup(function(use)
     use 'windwp/nvim-ts-autotag'
     --[[ use 'akinsho/nvim-bufferline.lua' ]]
     --Barber
+    use 'nvim-tree/nvim-web-devicons'
     use { 'romgrk/barbar.nvim', requires = 'nvim-web-devicons' }
     use 'glepnir/lspsaga.nvim'
     use 'norcalli/nvim-colorizer.lua'

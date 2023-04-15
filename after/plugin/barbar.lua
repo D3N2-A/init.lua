@@ -1,14 +1,9 @@
-vim.g.barbar_auto_setup = false -- disable auto-setup
 require 'barbar'.setup {
-    -- WARN: do not copy everything below into your config!
-    --       It is just an example of what configuration options there are.
-    --       The defaults are suitable for most people.
-
     -- Enable/disable animations
     animation = true,
 
     -- Enable/disable auto-hiding the tab bar when there is a single buffer
-    auto_hide = false,
+    --[[ auto_hide = false, ]]
 
     -- Enable/disable current/total tabpages indicator (top right corner)
     tabpages = true,
@@ -78,3 +73,9 @@ require 'barbar'.setup {
 
     no_name_title = nil,
 }
+
+local map = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
+--Cycling through tabs barbar tabs
+map('n', '<Tab>', '<Cmd>BufferNext<CR>', {})
+map('n', '<S-Tab>', '<Cmd>BufferPrev<CR>', {})
