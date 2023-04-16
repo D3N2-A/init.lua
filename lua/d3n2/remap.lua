@@ -14,6 +14,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 --Cycling through tabs bufferline
 vim.keymap.set('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', {})
 vim.keymap.set('n', '<S-Tab>', '<Cmd>BufferLineCyclePrev<CR>', {})
+--Remaped shift eneter to start new line
 vim.keymap.set('i', '<S-Enter>', '<Esc>o')
 
 
