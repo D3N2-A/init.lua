@@ -23,6 +23,9 @@ vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>");
 -- Enable cursorline and set its highlighting
 vim.opt.cursorline = true
 vim.cmd('highlight CursorLine guibg=none gui=underline')
+-- Yanking to system clipboard
+
+vim.keymap.set("n", '<C-c>', '"+yy')
 
 -- Automatically update the highlighting when the colorscheme changes
 vim.cmd([[autocmd ColorScheme * highlight CursorLine guibg=none gui=underline]])
