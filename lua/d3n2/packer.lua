@@ -26,7 +26,6 @@ return require('packer').startup(function(use)
     use('ThePrimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
-    --[[ use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' } ]]
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
@@ -68,10 +67,10 @@ return require('packer').startup(function(use)
     -- Takumi aka crazydog lua config stuff
     use 'windwp/nvim-autopairs'
     use 'windwp/nvim-ts-autotag'
-    --[[ use 'akinsho/nvim-bufferline.lua' ]]
-    --Barber
-    use 'nvim-tree/nvim-web-devicons'
-    use { 'romgrk/barbar.nvim', requires = 'nvim-web-devicons' }
+    use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
+    --[[ --Barber ]]
+    --[[ use 'nvim-tree/nvim-web-devicons' ]]
+    --[[ use { 'romgrk/barbar.nvim', requires = 'nvim-web-devicons' } ]]
     use 'glepnir/lspsaga.nvim'
     use 'norcalli/nvim-colorizer.lua'
     use 'nvim-lualine/lualine.nvim'
